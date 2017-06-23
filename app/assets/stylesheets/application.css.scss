@@ -15,3 +15,32 @@
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+body {
+    background-color: #4e5266;
+}
+.navbar {
+    background-color: #4e5266;
+    border: none;
+    .navbar-brand {
+        color: white;
+    }
+}
+
+#home-header {
+    height: 600px;
+    .left {
+        height: 300px;
+    }
+    .left.top {
+        background-color: red;
+    }
+    .left.bot {
+        background-color: green;
+    }
+    .right {
+        height: 100%;
+        background-color: blue;
+    }
+    
+}
