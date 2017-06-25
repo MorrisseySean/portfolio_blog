@@ -18,6 +18,8 @@
 
 $(document).ready(function(){
     $(".slideshow > div:gt(0)").hide();
+    $('.hidden-text').hide();
+    
     setInterval(function() { 
         $('.slideshow > div:first')
             .fadeOut(1000)
@@ -27,4 +29,28 @@ $(document).ready(function(){
             .appendTo('.slideshow');
         }
     ,  5000);
+    
+    $("#who-block").hover(
+        function(){
+            $('.slideshow').fadeOut(1000);
+            $('#what-text').fadeOut(1000);
+            $('#who-text').stop( true, true ).fadeIn(2000);
+        },
+        function(){
+            $('.slideshow').stop( true, true ).fadeIn(1000);
+            $('#who-text').stop( true, true ).fadeOut(1000);
+        }
+    );
+    
+    $("#what-block").hover(
+        function(){
+            $('.slideshow').fadeOut(1000);
+            $('#who-text').fadeOut(1000);
+            $('#what-text').stop( true, true ).fadeIn(2000);
+        },
+        function(){
+            $('.slideshow').stop( true, true ).fadeIn(1000);
+            $('#what-text').stop( true, true ).fadeOut(1000);
+        }
+    );
 });

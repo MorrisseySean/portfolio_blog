@@ -31,8 +31,11 @@ body {
     }
 }
 
-#home-header {
+.c-block{
     height: 600px;
+}
+
+#home-header {
     .left {
         height: 300px;
         text-align: center;
@@ -47,10 +50,10 @@ body {
         background-color: #A967B2;
     }
     .right {
+        background-color: #38093F;
         height: 100%;
         padding: 0;
     }
-    
 }
 
 .slideshow { 
@@ -68,3 +71,16 @@ body {
         height: 100%;
     }
 }
+
+#blog-block {
+    background-color: white;
+}
+
+.hidden-text {
+    color: white;
+    position: absolute;
+    padding: 30px;
+    text-align: justify;
+}
+
+
