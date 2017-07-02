@@ -31,30 +31,35 @@ body {
     }
 }
 
-.c-block{
+/// Content blocks for the home page, used to keep regular height
+.c-block {
     height: 600px;
 }
 
+/// Home header styling, including all 3 segments
 #home-header {
+    /// Limit height of left portions to half of the c-block and format text 
     .left {
         height: 300px;
         text-align: center;
         font-family: 'Abel';
         color: white;
     }
+    /// Color left box portions seperately
     .left.top {
         background-color: #7E3A87;
     }
     .left.bot {
         background-color: #A967B2;
     }
+    /// Remove padding and make sure height is equal to left box
     .right {
-        background-color: #38093F;
         height: 100%;
         padding: 0;
     }
 }
 
+/// Styling for images of the slideshow, fill images to size of parent div
 .slideshow { 
     position: relative; 
     width: 100%; 
@@ -71,52 +76,54 @@ body {
     }
 }
 
+/// Blog content block styling
 #blog-block {
     background-color: white;
 }
 
+/// Styling for the text to be hidden behind a hover effect
 .hidden-text {
     color: white;
     font-size: 1.1em;
     position: absolute;
     padding: 20%;
     text-align: justify;
+    /// Button styling, centering the images
+    .btn {
+        width: 100px;
+        height: 28px;
+        background-size: 100%;
+        background-repeat: none;
+        background-position: center;
+    }
 }
 
-#who-btn {
-    text-align: center;
-}
-
+/// Header h1 text styling and positioning
 .header-text {
-    padding-top: 50%;
+    padding-top: 200px;
     position: absolute;
     text-shadow: 1px 1px 1px black;
 }
-
 #who-hover {
     padding-left: 60%;
 }
-
 #what-hover {
     padding-left: 20px;
     
 }
 
-#li-btn {
-    width: 100px;
-    height: 28px;
-    background-image: url('https://www.reciprocatellc.com/wp-content/uploads/2010/04/linkedin-logo.jpg');
-    background-size: 100%;
-    background-repeat: none;
+/// Center buttons in the who hover box
+#who-btn-group {
+    text-align: center;
 }
 
+/// Images for the who text buttons 
+#li-btn {
+    background-image: url('https://www.reciprocatellc.com/wp-content/uploads/2010/04/linkedin-logo.jpg');
+}
 #tw-btn {
     background-image: url('https://whatswp.com/wp-content/uploads/2013/10/twitter-logo.png'); 
-    width: 100px;
-    height: 28px;
-    background-size: 100%;
-    background-repeat: none;
-    background-position: center;
+    
 }
 
 
