@@ -41,7 +41,6 @@ body {
         text-align: center;
         font-family: 'Abel';
         color: white;
-        padding-top: 100px;
     }
     .left.top {
         background-color: #7E3A87;
@@ -78,9 +77,46 @@ body {
 
 .hidden-text {
     color: white;
+    font-size: 1.1em;
     position: absolute;
-    padding: 30px;
+    padding: 20%;
     text-align: justify;
+}
+
+#who-btn {
+    text-align: center;
+}
+
+.header-text {
+    padding-top: 50%;
+    position: absolute;
+    text-shadow: 1px 1px 1px black;
+}
+
+#who-hover {
+    padding-left: 60%;
+}
+
+#what-hover {
+    padding-left: 20px;
+    
+}
+
+#li-btn {
+    width: 100px;
+    height: 28px;
+    background-image: url('https://www.reciprocatellc.com/wp-content/uploads/2010/04/linkedin-logo.jpg');
+    background-size: 100%;
+    background-repeat: none;
+}
+
+#tw-btn {
+    background-image: url('https://whatswp.com/wp-content/uploads/2013/10/twitter-logo.png'); 
+    width: 100px;
+    height: 28px;
+    background-size: 100%;
+    background-repeat: none;
+    background-position: center;
 }
 
 

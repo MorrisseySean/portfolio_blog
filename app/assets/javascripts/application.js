@@ -32,24 +32,22 @@ $(document).ready(function(){
     
     $("#who-block").hover(
         function(){
-            $('.slideshow').fadeOut(1000);
-            $('#what-text').fadeOut(1000);
+            $('#who-hover').fadeOut(1000);
             $('#who-text').stop( true, true ).fadeIn(2000);
         },
         function(){
-            $('.slideshow').stop( true, true ).fadeIn(1000);
+            $('#who-hover').stop( true, true ).fadeIn(1000);
             $('#who-text').stop( true, true ).fadeOut(1000);
         }
     );
     
     $("#what-block").hover(
         function(){
-            $('.slideshow').fadeOut(1000);
-            $('#who-text').fadeOut(1000);
+            $('#what-hover').fadeOut(1000);
             $('#what-text').stop( true, true ).fadeIn(2000);
         },
         function(){
-            $('.slideshow').stop( true, true ).fadeIn(1000);
+            $('#what-hover').stop( true, true ).fadeIn(1000);
             $('#what-text').stop( true, true ).fadeOut(1000);
         }
     );
