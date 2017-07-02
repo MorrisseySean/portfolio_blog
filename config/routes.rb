@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :admins
   mount Ckeditor::Engine => '/ckeditor'
+  devise_for :admins
   root 'pages#home'
   resources :posts
   
